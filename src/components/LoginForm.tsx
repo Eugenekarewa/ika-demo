@@ -41,72 +41,78 @@ export default function IkaWalletLogin() {
       </div>
 
       {/* Monkey Character */}
-      <div className="absolute left-8 top-1/2 transform -translate-y-1/2 z-5 hidden lg:block">
-        <div className="relative">
-          {/* Monkey body */}
-          <div className="w-64 h-80 relative">
-            {/* Hat */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-16 bg-gradient-to-b from-yellow-400 to-yellow-600 rounded-full shadow-lg border-4 border-yellow-500"></div>
-            <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-20 h-12 bg-gradient-to-b from-green-500 to-green-600 rounded-full"></div>
-            
-            {/* Head */}
-            <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full shadow-lg"></div>
-            
-            {/* Face */}
-            <div className="absolute top-12 left-1/2 transform -translate-x-1/2 w-16 h-12 bg-gradient-to-b from-amber-400 to-amber-600 rounded-full"></div>
-            
-            {/* Eyes */}
-            <div className="absolute top-14 left-1/2 transform -translate-x-1/2 flex space-x-2">
-              <div className="w-6 h-6 bg-white rounded-full shadow-inner flex items-center justify-center">
-                <div className="w-4 h-4 bg-black rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                </div>
-              </div>
-              <div className="w-6 h-6 bg-white rounded-full shadow-inner flex items-center justify-center">
-                <div className="w-4 h-4 bg-black rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                </div>
+      <div className="absolute left-8 top-1/2 transform -translate-y-1/2 z-0 hidden lg:block">
+        <div className="relative w-64 h-96">
+          {/* Hat brim */}
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-4 bg-gradient-to-b from-yellow-400 to-yellow-600 rounded-full shadow-lg"></div>
+          {/* Hat crown */}
+          <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-20 h-16 bg-gradient-to-b from-green-500 to-green-700 rounded-t-full shadow-md"></div>
+          
+          {/* Ears */}
+          <div className="absolute top-12 left-16 w-8 h-8 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full shadow-md"></div>
+          <div className="absolute top-12 right-16 w-8 h-8 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full shadow-md"></div>
+          
+          {/* Head */}
+          <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full shadow-lg"></div>
+          
+          {/* Face */}
+          <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-16 h-14 bg-gradient-to-b from-orange-300 to-orange-400 rounded-full"></div>
+          
+          {/* Eyes */}
+          <div className="absolute top-24 left-1/2 transform -translate-x-1/2 -translate-x-4">
+            <div className="w-6 h-6 bg-white rounded-full shadow-inner flex items-center justify-center">
+              <div className="w-4 h-4 bg-black rounded-full flex items-center justify-center">
+                <div className="w-1 h-1 bg-white rounded-full"></div>
               </div>
             </div>
-            
-            {/* Nose and smile */}
-            <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-black rounded-full"></div>
-            <div className="absolute top-22 left-1/2 transform -translate-x-1/2 w-6 h-3 border-b-2 border-black rounded-b-full"></div>
-            
-            {/* Ears */}
-            <div className="absolute top-10 left-8 w-8 h-8 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full"></div>
-            <div className="absolute top-10 right-8 w-8 h-8 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full"></div>
-            
-            {/* Body */}
-            <div className="absolute top-28 left-1/2 transform -translate-x-1/2 w-24 h-32 bg-gradient-to-b from-red-500 to-red-700 rounded-t-full shadow-lg"></div>
-            
-            {/* Arms */}
-            <div className="absolute top-32 left-4 w-8 h-20 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full transform rotate-12"></div>
-            <div className="absolute top-32 right-4 w-8 h-20 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full transform -rotate-12"></div>
-            
-            {/* Hands with wallet */}
-            <div className="absolute top-48 left-2 w-6 h-6 bg-gradient-to-b from-amber-500 to-amber-700 rounded-full"></div>
-            <div className="absolute top-48 right-2 w-6 h-6 bg-gradient-to-b from-amber-500 to-amber-700 rounded-full flex items-center justify-center">
-              <Wallet className="text-emerald-600" size={16} />
+          </div>
+          <div className="absolute top-24 left-1/2 transform -translate-x-1/2 translate-x-4">
+            <div className="w-6 h-6 bg-white rounded-full shadow-inner flex items-center justify-center">
+              <div className="w-4 h-4 bg-black rounded-full flex items-center justify-center">
+                <div className="w-1 h-1 bg-white rounded-full"></div>
+              </div>
             </div>
-            
-            {/* Legs */}
-            <div className="absolute top-56 left-6 w-6 h-16 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full"></div>
-            <div className="absolute top-56 right-6 w-6 h-16 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full"></div>
-            
-            {/* Feet */}
-            <div className="absolute top-68 left-4 w-10 h-6 bg-gradient-to-b from-amber-500 to-amber-700 rounded-full"></div>
-            <div className="absolute top-68 right-4 w-10 h-6 bg-gradient-to-b from-amber-500 to-amber-700 rounded-full"></div>
-            
-            {/* Tail */}
-            <div className="absolute top-40 -right-8 w-4 h-24 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full transform rotate-45 animate-pulse"></div>
           </div>
           
+          {/* Nose */}
+          <div className="absolute top-28 left-1/2 transform -translate-x-1/2 w-2 h-1 bg-black rounded-full"></div>
+          
+          {/* Smile */}
+          <div className="absolute top-30 left-1/2 transform -translate-x-1/2 w-8 h-4 border-b-2 border-black rounded-b-full border-l-0 border-r-0 border-t-0"></div>
+          
+          {/* Body */}
+          <div className="absolute top-36 left-1/2 transform -translate-x-1/2 w-28 h-36 bg-gradient-to-b from-red-500 to-red-700 rounded-2xl shadow-lg"></div>
+          
+          {/* Left arm */}
+          <div className="absolute top-40 left-8 w-6 h-20 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full shadow-md transform rotate-12"></div>
+          {/* Right arm */}
+          <div className="absolute top-40 right-8 w-6 h-20 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full shadow-md transform -rotate-12"></div>
+          
+          {/* Left hand */}
+          <div className="absolute top-56 left-6 w-8 h-8 bg-gradient-to-b from-amber-500 to-amber-700 rounded-full shadow-md"></div>
+          {/* Right hand with wallet */}
+          <div className="absolute top-56 right-6 w-8 h-8 bg-gradient-to-b from-amber-500 to-amber-700 rounded-full shadow-md flex items-center justify-center">
+            <Wallet className="text-emerald-600" size={12} />
+          </div>
+          
+          {/* Left leg */}
+          <div className="absolute top-64 left-12 w-6 h-20 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full shadow-md"></div>
+          {/* Right leg */}
+          <div className="absolute top-64 right-12 w-6 h-20 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full shadow-md"></div>
+          
+          {/* Left foot */}
+          <div className="absolute top-80 left-10 w-12 h-6 bg-gradient-to-b from-amber-500 to-amber-700 rounded-full shadow-md"></div>
+          {/* Right foot */}
+          <div className="absolute top-80 right-10 w-12 h-6 bg-gradient-to-b from-amber-500 to-amber-700 rounded-full shadow-md"></div>
+          
+          {/* Tail */}
+          <div className="absolute top-48 -right-4 w-3 h-20 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full shadow-md transform rotate-45 animate-pulse origin-top"></div>
+          
           {/* Speech bubble */}
-          <div className="absolute -top-8 -right-20 bg-white rounded-lg p-3 shadow-lg border-2 border-emerald-200">
-            <p className="text-sm font-medium text-gray-700">Welcome to IKA!</p>
-            <div className="absolute bottom-0 left-8 transform translate-y-full">
-              <div className="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"></div>
+          <div className="absolute -top-4 right-0 bg-white rounded-xl p-3 shadow-lg border border-gray-200 animate-bounce">
+            <p className="text-xs font-semibold text-gray-700 whitespace-nowrap">Secure your wallet!</p>
+            <div className="absolute bottom-0 left-4 transform translate-y-full">
+              <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-white"></div>
             </div>
           </div>
         </div>
